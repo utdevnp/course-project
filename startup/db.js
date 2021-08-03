@@ -11,15 +11,8 @@ module.exports = function(){
         useCreateIndex:true
     }).then(() => {
         winston.info("Connected to .. ".database)
-        console.log(`Connected to ${database}`)
+        console.log(`Connected to ${database}`);
     });
-    
-    const client = new MongoClient(database, { useNewUrlParser: true, useUnifiedTopology: true });
-    client.connect(err => {
-    const collection = client.db("test").collection("devices");
-    // perform actions on the collection object
-    client.close();
-    });
-
+   
 
 }
