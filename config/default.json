@@ -1,4 +1,4 @@
 {
     "jwtSecretToken":"jwtSecretToken",
-    "db":"mongodb://localhost/playground"
+    "db":"mongodb+srv://courseUser:1234@cluster0.yzxam.mongodb.net/test"
 }
