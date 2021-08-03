@@ -1,3 +1,4 @@
 {
-    "jwtSecretToken":"Course_jwtSecretToken"
+    "jwtSecretToken":"Course_jwtSecretToken",
+    "db":"course_db"
 }
