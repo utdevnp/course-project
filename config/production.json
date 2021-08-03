@@ -1,0 +1,5 @@
+
+{
+    "jwtSecretToken":"jwtSecretToken",
+    "db":"mongodb+srv://courseUser:<password>@cluster0.yzxam.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+}
