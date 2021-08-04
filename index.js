@@ -12,9 +12,9 @@ require("./startup/prod")(app);
 
 
 // listen or serve app in given port number like 3000,8000
-// const port = 8080; // set listening port of the service 
-// const server = app.listen(port,function(){
-//     console.log(`Server running at port ${port} on http://localhost:${port}`);
-// })
+const port = process.env.PORT || 8080; // set listening port of the service 
+const server = app.listen(port,function(){
+    console.log(`Server running at port ${port} on http://localhost:${port}`);
+})
 
-// module.exports = server; // for getting http endpoint in test module
+module.exports = server; // for getting http endpoint in test module
