@@ -1,10 +1,9 @@
 const requireLogin = require("../../../middlewire/requireLogin");
+const isAdmin = require("../../../middlewire/isAdmin");
 const {User} = require("../../../models/userModel");
 const db = require("mongoose");
 
-describe("Require login",()=>{
-
-    it("should populate req.user with valid JWT token", async ()=>{
+    it("should populate req.user.isAdmin (true) with valid JWT token", async ()=>{
         const userd = {
             _id: db.Types.ObjectId().toHexString(),
              isAdmin:true
@@ -16,13 +15,9 @@ describe("Require login",()=>{
         const res = {};
         const next= jest.fn();
 
-        requireLogin(req, res, next);
+        requireLogin(req,res,next);
+        isAdmin(req, res, next);
 
-
-        expect(req.user).toBeDefined();
-        expect(req.user).toMatchObject(userd);
+        expect(req.user.isAdmin).toBeTruthy();
+      
     })
-
-
-
-})

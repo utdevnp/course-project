@@ -76,7 +76,7 @@ router.put("/:id", [requireLogin,valiadteObjId,validateInput(validateCourse)], a
 });
 
 // delete course
-router.delete("/:id", [requireLogin, valiadteObjId], async function(req,res){
+router.delete("/:id", [requireLogin, isAdmin, valiadteObjId], async function(req,res){
   
     let course = await Course.findByIdAndRemove(req.params.id);
     if(!course) return res.status(404).send("Requested course not found");

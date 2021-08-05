@@ -10,9 +10,11 @@ module.exports = function(){
         useUnifiedTopology: true,
         useCreateIndex:true
     }).then(() => {
-        winston.info("Connected to .. ".database)
+        winston.info("Connected to .. "+database);
         console.log(`Connected to ${database}`);
     });
    
 
 }
+
+//  //"db":"mongodb+srv://courseUser:1234@cluster0.yzxam.mongodb.net/test"

@@ -7,14 +7,15 @@ const db = require("mongoose");
 let server ;
 
 
+
 describe("/api/course",()=>{
 
     let token; 
     
     beforeEach(()=>{ 
-        //jest.setTimeout(150000);
+        jest.setTimeout(300000);
         server  = require("../../index"); 
-        token  = new User({isAdmin:false}).generateAuthToken();
+        token  = new User({isAdmin:true}).generateAuthToken();
     })
     afterEach( async ()=>{ 
         server.close(); 
@@ -119,7 +120,6 @@ describe("/api/course",()=>{
 
         it("should return 200 if course deleted with valid id",async ()=>{
             const course  = await courseFactory.create();
-
             const res = await request(server)
                 .delete("/api/course/"+course._id)
                 .set("x-auth-header",token);
@@ -129,6 +129,7 @@ describe("/api/course",()=>{
 
         it("should return 401 where x-auth-header is not set", async ()=>{
             const course  = await courseFactory.create();
+
             const res = await request(server)
                 .delete("/api/course/"+course._id)
                 //.set("x-auth-header",token);
@@ -144,6 +145,21 @@ describe("/api/course",()=>{
 
             expect(res.status).toBe(404);
         })
+
+
+        it("should return 403 if not admin", async()=>{
+            const course = await courseFactory.create();
+            token  = new User({isAdmin:false}).generateAuthToken();
+
+            await courseFactory.create();
+            const res = await request(server)
+                .delete("/api/course/"+ course._id)
+                .set("x-auth-header",token);
+
+            expect(res.status).toBe(403);
+
+        })
+
     })
 
     describe("PUT/:id", ()=>{
@@ -174,7 +190,7 @@ describe("/api/course",()=>{
 
         it("should return 404 if valid id is not exist ", async()=>{
             await courseFactory.create();
-       
+          
             const id = db.Types.ObjectId();
             const res = await request(server).put("/api/course/"+id)
                 .set('x-auth-header',token)
@@ -182,6 +198,10 @@ describe("/api/course",()=>{
 
             expect(res.status).toBe(404);
         })
+
+
+
+        
     })
 
 
