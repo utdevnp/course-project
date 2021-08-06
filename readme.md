@@ -2,15 +2,15 @@
 ## Course Project 
 
 ## How to start
-** Install all depandency from npm ** 
+<b>Install all depandency from npm </b>  
 <pre>
     npm install
 </pre>
-** Start application ** 
+<b> Start application </b> 
 <pre>
     npm start
 </pre>
-** Start test ** 
+<b>Start test</b>
 <pre>
     npm test
 </pre>
