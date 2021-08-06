@@ -49,3 +49,34 @@
 {"message":"Connected to mongodb://localhost/playground","level":"info"}
 {"message":"Connected to mongodb://localhost/playground","level":"info"}
 {"message":"Connected to mongodb://localhost/playground","level":"info"}
+{"message":"Connected to mongodb://localhost/playground","level":"info"}
+{"message":"Connected to mongodb://localhost/playground","level":"info"}
+{"message":"Connected to mongodb://localhost/playground","level":"info"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","message":"Cannot set headers after they are sent to the client Cannot set headers after they are sent to the client","stack":"Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n    at ServerResponse.setHeader (_http_outgoing.js:518:11)\n    at ServerResponse.header (E:\\Node_Projects\\courseProject\\node_modules\\express\\lib\\response.js:771:10)\n    at ServerResponse.send (E:\\Node_Projects\\courseProject\\node_modules\\express\\lib\\response.js:170:12)\n    at E:\\Node_Projects\\courseProject\\routes\\courses.js:28:44\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"message":"Connected to mongodb://localhost/playground","level":"info"}
+{"message":"Connected to mongodb://localhost/playground","level":"info"}
+{"message":"Connected to mongodb://localhost/playground","level":"info"}
+{"message":"Connected to mongodb://localhost/playground","level":"info"}
+{"message":"Connected to mongodb://localhost/playground","level":"info"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","message":"Cannot set headers after they are sent to the client Cannot set headers after they are sent to the client","stack":"Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n    at ServerResponse.setHeader (_http_outgoing.js:518:11)\n    at ServerResponse.header (E:\\Node_Projects\\courseProject\\node_modules\\express\\lib\\response.js:771:10)\n    at ServerResponse.send (E:\\Node_Projects\\courseProject\\node_modules\\express\\lib\\response.js:170:12)\n    at E:\\Node_Projects\\courseProject\\routes\\courses.js:28:44\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"message":"Connected to mongodb://localhost/playground","level":"info"}
+{"message":"Connected to mongodb://localhost/playground","level":"info"}
+{"message":"Connected to mongodb://localhost/playground","level":"info"}
+{"message":"Connected to mongodb://localhost/playground","level":"info"}
+{"message":"Connected to mongodb://localhost/playground","level":"info"}
+{"message":"Connected to mongodb://localhost/playground","level":"info"}
+{"message":"Connected to mongodb://localhost/playground","level":"info"}
+{"message":"Connected to mongodb://localhost/playground","level":"info"}
+{"message":"Connected to mongodb://localhost/playground","level":"info"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","message":"Cannot set headers after they are sent to the client Cannot set headers after they are sent to the client","stack":"Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n    at ServerResponse.setHeader (_http_outgoing.js:518:11)\n    at ServerResponse.header (E:\\Node_Projects\\courseProject\\node_modules\\express\\lib\\response.js:771:10)\n    at ServerResponse.send (E:\\Node_Projects\\courseProject\\node_modules\\express\\lib\\response.js:170:12)\n    at E:\\Node_Projects\\courseProject\\routes\\courses.js:28:44\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"message":"Connected to mongodb://localhost/playground","level":"info"}
+{"message":"Connected to mongodb://localhost/playground","level":"info"}
+{"message":"Connected to mongodb://localhost/playground","level":"info"}
+{"message":"Connected to mongodb://localhost/playground","level":"info"}
+{"message":"Connected to mongodb://localhost/playground","level":"info"}
+{"message":"Connected to mongodb://localhost/playground","level":"info"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","message":"Cannot set headers after they are sent to the client Cannot set headers after they are sent to the client","stack":"Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n    at ServerResponse.setHeader (_http_outgoing.js:518:11)\n    at ServerResponse.header (E:\\Node_Projects\\courseProject\\node_modules\\express\\lib\\response.js:771:10)\n    at ServerResponse.send (E:\\Node_Projects\\courseProject\\node_modules\\express\\lib\\response.js:170:12)\n    at E:\\Node_Projects\\courseProject\\routes\\courses.js:28:44\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"message":"Connected to mongodb://localhost/playground","level":"info"}
+{"message":"Connected to mongodb://localhost/playground","level":"info"}
+{"message":"Connected to mongodb://localhost/playground","level":"info"}
+{"message":"Connected to mongodb://localhost/playground","level":"info"}

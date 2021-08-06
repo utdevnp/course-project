@@ -10,7 +10,7 @@ module.exports = function(){
         useCreateIndex:true
     }).then( async () => {
         winston.info(`Connected to ${env.mongoURI}`);
-        console.info(`Connected to ${env.mongoURI}`);
+        //console.info(`Connected to ${env.mongoURI}`);
     });
    
 
