@@ -1,20 +1,24 @@
 const request = require("supertest");
 const userFactory = require("../factories/userFactory");
 let server;
-jest.setTimeout(150000);
-
 describe("user route",()=>{
    
+
+
     beforeEach(()=>{
         server = require("../../index");
     })
 
     afterEach( async ()=>{
         server.close();
-        await userFactory.clear();
+        userFactory.clear();
     })
 
+
     describe("POST/",()=>{
+
+      
+
         it("should return 400 if invalid input ",async ()=>{
 
             const res = await request(server).post("/api/user")
@@ -40,6 +44,7 @@ describe("user route",()=>{
     });
 
     describe("GET/",()=>{
+        
         it("should return 401 if token is invalid", async ()=>{
             const res = await request(server).get("/api/user")
             .set("x-auth-header","dskfjksfsfsf");

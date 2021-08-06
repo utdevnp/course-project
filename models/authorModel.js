@@ -33,5 +33,5 @@ function validateAuthor(author){
 
 
 exports.Author = Author;
-exports.validate = validateAuthor;
+exports.validateAuthor = validateAuthor;
 exports.authorSchema = authorSchema;

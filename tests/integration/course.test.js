@@ -13,7 +13,6 @@ describe("/api/course",()=>{
     let token; 
     
     beforeEach(()=>{ 
-        jest.setTimeout(300000);
         server  = require("../../index"); 
         token  = new User({isAdmin:true}).generateAuthToken();
     })

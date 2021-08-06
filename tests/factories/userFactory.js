@@ -20,8 +20,8 @@ function authToken(boolvalue){
    return new User(userd).generateAuthToken();
 }
 
-function clear(){
-    return  User.deleteMany({});
+async function clear(){
+    return  await User.deleteMany({});
 }
 
 function validData(){

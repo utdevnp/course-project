@@ -9,9 +9,9 @@ module.exports = function(){
         useNewUrlParser:true,
         useUnifiedTopology: true,
         useCreateIndex:true
-    }).then(() => {
-        winston.info("Connected to .. "+database);
-        console.log(`Connected to ${database}`);
+    }).then( async () => {
+        winston.info(`Connected to ${database}`);
+        //console.info(`Connected to ${database}`);
     });
    
 

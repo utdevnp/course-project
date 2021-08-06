@@ -1,5 +1,4 @@
 const valiadteObjId = require("../middlewire/validateObjectId");
-
 const validateInput = require("../middlewire/validateInput"); 
 // use object destructuring , this validateCourse return the two array one is error
 
@@ -9,12 +8,7 @@ const isAdmin = require("../middlewire/isAdmin");
 
 
 const express = require("express");
-const { Author } = require("../models/authorModel");
-const validateObjectId = require("../middlewire/validateObjectId");
 const router = express.Router();
-
-
-
 
 // course list route
 router.get("/", [requireLogin],  async (req,res)=>{

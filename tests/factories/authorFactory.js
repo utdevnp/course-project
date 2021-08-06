@@ -10,8 +10,8 @@ function createMany(){
 }
 
 
-function clear(){
-    return  Author.deleteMany({});
+async function clear(){
+    return await  Author.deleteMany({});
 }
 
 function validData(){

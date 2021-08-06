@@ -50,11 +50,13 @@ describe("auth",()=>{
         
         const user  = await userFactory.create();
         const token = user.generateAuthToken();
+        //console.log("usergen Token : " + token);
         const res = await request(server).post("/api/auth").send({
             email:user.email,
             password:userFactory.validData().password
         })
 
+       // console.log("responseToken: ", res.body.token);
         expect(res.status).toBe(200);
         expect(res.body).toHaveProperty("token",token);
         
