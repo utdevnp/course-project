@@ -1,17 +1,16 @@
 const db = require("mongoose");
 const winston = require("winston");
-const config = require("config");
+const env = require("../env/keys");
 module.exports = function(){
     
-    const database = config.get("db");
     // connect the database 
-    db.connect(database,{
+    db.connect(env.mongoURI,{
         useNewUrlParser:true,
         useUnifiedTopology: true,
         useCreateIndex:true
     }).then( async () => {
-        winston.info(`Connected to ${database}`);
-        //console.info(`Connected to ${database}`);
+        winston.info(`Connected to ${env.mongoURI}`);
+        console.info(`Connected to ${env.mongoURI}`);
     });
    
 
