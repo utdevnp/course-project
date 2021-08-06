@@ -1,7 +1,7 @@
 
 ## Course Project 
 
-## How to start
+### How to start
 <b>Download Project  </b>  
 <pre>
     git clone https://github.com/utdevnp/course-project.git
